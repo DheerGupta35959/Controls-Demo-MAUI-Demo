@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InputControlDemo.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+
+            <CheckBox IsChecked="True" />
+
+            <Slider x:Name="slide"
+                    Minimum="0"
+                    Maximum="100"
+                    MinimumTrackColor="Yellow"
+                    MaximumTrackColor="Red"
+                    ThumbColor="Black"
+                    ValueChanged="slider_ValueChanged"/>
+            
+            <Label x:Name="lblSlider"/>
+
+            <Stepper x:Name="stepper"
+                     ValueChanged="stepper_ValueChanged"
+                     Maximum="10"
+                     Minimum="2"
+                     Increment="2" />
+
+            <Switch IsToggled="True"/>
+
+            <DatePicker />
+            <TimePicker />
+            
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
